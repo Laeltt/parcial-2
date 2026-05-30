@@ -1,0 +1,129 @@
+
+	@font-face {font-family: inter; 
+        src: url(../inter.ttf)}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', cursive;
+}
+
+.head{
+	text-align: center; 
+
+
+}
+.font {
+		font-style: italic; 
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+
+.hr1 {
+
+ 	border: none;
+ 	 height: 3px;
+  	background-color: black;
+  	width: 70%;
+  	margin: 20px auto;
+}
+
+header .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(12deg, rgb(41, 41, 41), rgb(74, 74, 74));
+    color: #fff;
+    padding: 20px;
+    
+    /* Aca es para que se active la animacion */
+    transform: translateX(-235px); 
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Esta es la animacion al momento de pasar el mouse */
+.sidebar:hover {
+    transform: translateX(0);
+    box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+header .sidebar-titulo {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+header .sidebar-titulo img {
+    width: 150px;
+    max-width: 100%;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 10px;
+      transition: 
+    color 0.2s ,
+    background 0.2s ,
+    border-color 0.2s ,
+    transform 0.2s;
+    
+}
+
+header .sidebar-titulo img:hover{
+    background-color:rgba(103, 106, 219, 0.12);
+    color: #fdfdfdb1;
+    border-color: #fff;
+    transform: translateX(3px);
+
+
+}
+header .Practicas {
+    list-style: none;
+}
+
+header .Practicas li {
+    margin: 15px 0;
+}
+
+header .Practicas a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: 
+    color 0.2s ,
+    background 0.2s ,
+    border-color 0.2s ,
+    transform 0.2s ;
+    
+}
+
+
+header .Practicas a:hover {
+    background-color:rgba(103, 106, 219, 0.12);
+    color: #fdfdfdb1;
+    padding-left: 15px; /* Pequeño desplazamiento al hacer hover */
+    border-color: #fff;
+    transform: translateX(3px);
+}
+header .titulo {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    
+    margin-left: 5px;
+
+
+}
+/* --- Contenido Principal --- */
+.main-content {
+    margin-left: 30px; /* Espacio para que no se tape con el borde oculto del sidebar */
+    padding: 40px;
+    width: 100%;
+}

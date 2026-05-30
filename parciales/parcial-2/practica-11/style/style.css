@@ -1,0 +1,196 @@
+
+@font-face {
+	font-family: customfont;
+	src: url(../font/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+*{
+	font-family: 'customfont', cursive;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+	}
+
+body{
+	background: #141414;
+	color: white;
+	font-size: 1.1rem;	
+}
+
+menu img{
+	width: 10%;
+}
+
+menu{
+	padding: 15px;
+}
+
+main .contenedor{
+	width: 80%;
+	margin: 0 auto;
+}
+
+main .bienvenida{
+	padding: 10px;
+	text-align: center;
+}
+
+main .perfiles{
+	text-align: center;
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+}
+
+main .perfiles .perfil .foto{
+	width: 200px;
+	height: 200px;
+	background: #2e302e;
+	margin: 10px 0;
+
+	border: 5px solid #323232;
+}
+main .perfiles .perfil .foto img{
+	width: 100%;
+	border: 6.5px 
+
+
+
+}
+main .perfiles .texto{
+	text-align: center;
+
+}
+
+main .perfil .foto:hover{
+	border: 5px solid white;
+	transition: 1s;
+	transform-origin: 0.5s;
+}
+
+main .boton {
+	text-align: center;
+	margin: 20px 10px;
+}
+
+main .boton a {
+text-decoration: none;
+color: #7d7d7d;
+border: 2px solid #7d7d7d;
+padding: 7px 15px;
+display: inline-block
+
+
+}
+main .boton a:hover{
+	color: white;
+	border: 2px solid white;
+transition: 0.5s	 ;
+
+}
+footer .textfooter{
+	text-align: center;
+	padding: 30px;
+}
+
+header .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(12deg, rgb(41, 41, 41), rgb(74, 74, 74));
+    color: #fff;
+    padding: 20px;
+    
+    /* Aca es para que se active la animacion */
+    transform: translateX(-235px); 
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Esta es la animacion al momento de pasar el mouse */
+.sidebar:hover {
+    transform: translateX(0);
+    box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+header .sidebar-titulo {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+header .sidebar-titulo img {
+    width: 150px;
+    max-width: 100%;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 10px;
+      transition: 
+    color 0.2s ,
+    background 0.2s ,
+    border-color 0.2s ,
+    transform 0.2s;
+    
+}
+
+header .sidebar-titulo img:hover{
+    background-color:rgba(103, 106, 219, 0.12);
+    color: #fdfdfdb1;
+    border-color: #fff;
+    transform: translateX(3px);
+
+
+}
+header .Practicas {
+    list-style: none;
+}
+
+header .Practicas li {
+    margin: 15px 0;
+}
+
+header .Practicas a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: 
+    color 0.2s ,
+    background 0.2s ,
+    border-color 0.2s ,
+    transform 0.2s ;
+    
+}
+
+
+header .Practicas a:hover {
+    background-color:rgba(103, 106, 219, 0.12);
+    color: #fdfdfdb1;
+    padding-left: 15px; /* Pequeño desplazamiento al hacer hover */
+    border-color: #fff;
+    transform: translateX(3px);
+}
+header .titulo {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    
+    margin-left: 5px;
+
+
+}
+/* --- Contenido Principal --- */
+.main-content {
+    margin-left: 30px; /* Espacio para que no se tape con el borde oculto del sidebar */
+    padding: 40px;
+    width: 100%;
+}

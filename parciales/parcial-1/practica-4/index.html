@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="icon" type="image" href="img/gatotonto.jpg">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formularios - Samtiago Cortez Gomez - 601</title>
+</head>
+<style>
+</style>
+<body>
+		<header>
+
+    <div class="sidebar">
+        <div class="sidebar-titulo">
+             <a  class="titulo" href="../../../index.html">
+              <img src="../../../ui/img/laeltt.gif" alt="">
+             </a>
+        </div>
+
+        <ul class="Practicas">
+            <li><a href="../../parcial-1/practica-1/index.html">Practica 1</a></li>
+             <li><a href="../../parcial-1/practica-2/index.html">Practica 2</a></li>
+              <li><a href="../../parcial-1/practica-3/index.html">Practica 3</a></li>
+               <li><a href="../../parcial-1/practica-4/index.html">Practica 4</a></li>
+                <li><a href="../../parcial-1/practica-5/index.html">Practica 5</a></li>
+                 <li><a href="../../parcial-2/practica-6/index.html">Practica 6</a></li>
+                  <li><a href="../../parcial-2/practica-7/index.html">Practica 7</a></li>
+                   <li><a href="../../parcial-2/practica-8/index.html">Practica 8</a></li>
+                    <li><a href="../../parcial-2/practica-9/index.html">Practica 9</a></li>
+                     <li><a href="../../parcial-2/practica-10/index.html">Practica 10</a></li>
+                      <li><a href="../../parcial-2/practica-11/index.html">Practica 11</a></li>
+        </ul>
+    </div>
+</header>
+<div class="container ">
+	<div class="texto1">
+		<h1>👀 Formularios 👀</h1>
+		<h2>Por: Santiago Cortez Gomez</h2>
+		<p>Los formularios son campos que permiten capturar informacion por parte del usuario que permitira a nuestro sitio interactuar <strong>.</strong></p>
+		<hr class="hr1">
+		<h3><strong> Este formulario es un ejemplo de formulario:</strong></h3>
+		<div>
+			<form>
+				<label><strong>Nombre: </strong></label>
+				<input type="text" name="nombre" maxlength="100" placeholder="Nombre Completo" required>
+
+				<br> <br>
+				<label><strong>Correo Electronico</strong></label>
+				<input type="email" name="Correo" placeholder="Escribe tu Correo Electronico" required>
+
+				<br><br>
+
+				<label><strong>Contraseña</strong></label>
+				<input type="password" name="password" placeholder="Minimo 8 caracteres" minlength="8" required>
+
+				<br><br>
+				<label><strong>Fecha de Nacimiento</strong></label>
+				<input type="date" name="Edad" required pattern="\d{4}-\d{2}-\d{2}">  
+				<br><br>
+				<label><strong>Nacionalidad</strong></label>
+				<select>
+						<option selected disabled>Selecciona un Pais</option>
+						<option>🇲🇽 •၊ Mexico</option>
+						<option>🇧🇴 •၊ Bolivia</option>
+						<option>🇺🇸 •၊ Ee.uu</option>
+						<option>🇪🇸 •၊ España</option>
+						<option>🇨🇳 •၊ China</option>
+						<option>🇭🇰 •၊ Hong Kong</option>
+						<option>🇷🇺 •၊ Russia</option>
+						<option>🇯🇵 •၊ Japon</option>
+						<option>🇵🇪 •၊ Peru</option>
+						<option>🇦🇷 •၊ Argentina</option>
+						<option>🇧🇷 •၊ Brasil</option>
+				</select>
+
+				<br><br>
+				<label><strong>Escoge un pasatiempo:</strong></label>
+				<div class="divtext">
+					<input type="checkbox" name="Pasatiempos"> <strong>Leer
+					<br>
+					<input type="checkbox" name="Pasatiempos"> <strong>Musica</strong>
+					<br>
+					<input type="checkbox" name="Pasatiempos"> <strong>Videojuegos</strong>
+					<br>
+					<input type="checkbox" name="Pasatiempos"> <strong>Escribir</strong>
+					<br>
+					<input type="checkbox" name="Pasatiempos"> <strong>Crear </strong>
+					<br>
+					<input type="checkbox" name="Pasatiempos"> <strong style="font-family: 'Comic 	Sans MS' cursive;">Acariciar Gatitos 😸</strong>
+					<br> <br>
+				</div>
+				<label><strong>Genero:</strong></label>
+				<div class="generos">
+					<input type="radio" name="genero">Masculino
+				
+					<input type="radio" name="genero">Feminino
+				
+					<input type="radio" name="genero">No binario
+				
+					<input type="radio" name="genero">Prefiero no Decirlo
+					<br>
+					<label><strong>Otro:</strong></label>
+					<input type="text" name="">
+				</div>
+				<br><br><br>
+				<label><strong>Sube tu fotografia</strong></label>
+				<input type="file" name="archivo" required>
+
+				<br><br>
+				<label><strong>Escribe tu Mensaje:</strong></label>
+				<textarea cols="15" minlength="100" placeholder="Escribe tu mensaje" spellcheck="true" rows="forward" required></textarea>
+				<hr class="hr2">	
+				<input type="submit" name="boton" value="Contacta al 601">
+				<input type="reset" name="borrar" value="Borrar campos">	
+				<form novalidate><hr class="hr1">
+				</form>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
